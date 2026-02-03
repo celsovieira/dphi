@@ -314,7 +314,6 @@ section p {
 }
 
 /* Footer */
-/* Footer */
 footer {
     background: var(--white);
     border-top: 2px solid #e0e0e0;
@@ -339,7 +338,7 @@ footer {
 }
 
 .footer-logos img {
-    height: 70px;
+    height: 40px;
     width: auto;
     transition: opacity 0.3s;
 }
@@ -363,7 +362,7 @@ footer {
     }
     
     .footer-logos img {
-        height: 50px;
+        height: 30px;
     }
 }
 
