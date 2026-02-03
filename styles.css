@@ -128,6 +128,7 @@ section p {
 }
 
 /* People Grid */
+/* People Grid */
 .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -137,15 +138,38 @@ section p {
 
 .person-card {
     background: var(--white);
-    padding: 2rem;
+    padding: 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
 .person-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.person-photo {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 3rem;
+}
+
+.person-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person-info {
+    padding: 1.5rem;
 }
 
 .person-card h3 {
@@ -167,9 +191,19 @@ section p {
     margin-bottom: 1rem;
 }
 
+.person-card .email a {
+    color: #666;
+    text-decoration: none;
+}
+
+.person-card .email a:hover {
+    color: var(--teal);
+}
+
 .person-card p {
     font-size: 0.95rem;
     color: #666;
+    line-height: 1.6;
 }
 
 /* Project Cards */
