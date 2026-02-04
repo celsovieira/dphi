@@ -100,7 +100,7 @@ section {
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--teal);
     margin-bottom: 1.5rem;
     border-bottom: 3px solid var(--pink);
