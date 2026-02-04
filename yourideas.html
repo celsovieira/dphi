@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d.Phi Lab - Your Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="dphi-logo.png" alt="d.Phi Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="yourideas.html" class="active">Your Ideas</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="gradient-bar"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pitch Your Experiment</h2>
+            <p>
+                Have an idea for an experimental philosophy study? We'd love to hear from you! Whether you're a student, researcher, or just curious about philosophical questions, share your experimental ideas with us. We review all submissions and may feature promising ideas in our lab meetings or collaborate on developing them further.
+            </p>
+
+            <form class="idea-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="affiliation">Affiliation (Optional)</label>
+                    <input type="text" id="affiliation" name="affiliation" placeholder="University, Institution, or Independent">
+                </div>
+
+                <div class="form-group">
+                    <label for="pitch">Pitch Your Experiment *</label>
+                    <textarea id="pitch" name="pitch" rows="10" required placeholder="Describe your experimental idea. Include:
+- What philosophical question would it address?
+- What would be the experimental design or method?
+- What predictions or hypotheses do you have?
+- Any other relevant details..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Your Idea</button>
+                </div>
+
+                <p class="form-note">* Required fields. We'll review your submission and get back to you within 2-3 weeks.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logos">
+                <img src="CNPq_v2017_rgb.jpg" alt="CNPq Logo">
+                <img src="logo_ufmg_site.png" alt="UFMG Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 d.Phi Lab - Experimental Philosophy @ UFMG. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
