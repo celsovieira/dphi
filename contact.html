@@ -7,35 +7,146 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-    <nav>
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="dphi-logo.png" alt="d.Phi Logo">
-            </a>
-        </div>
-        <ul>
-                <li><a href="about.html">About</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="yourideas.html">Your Ideas</a></li>
-            <li><a href="index.html">News</a></li>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="dphi-logo.png" alt="d.Phi Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="yourideas.html">Your Ideas</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="gradient-bar"></div>
-</header>
-    
+            </ul>
+        </nav>
+        <div class="gradient-bar"></div>
+    </header>
 
     <main>
-        <div class="page-header">
-            <h1>Contact Us</h1>
-            <p>Get in touch with the d.Phi Lab</p>
-        </div>
-
         <section>
-            <h2>General Information</h2>
+            <h2>Get in Touch</h2>
+            <p>Whether you want to stay updated with our research, join our team, or explore collaboration opportunities, we'd love to hear from you.</p>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section>
+            <h2>📧 Newsletter</h2>
+            <p>Stay updated with our latest research, publications, and events.</p>
+            
+            <form class="contact-form newsletter-form" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="newsletter-email">Email Address *</label>
+                    <input type="email" id="newsletter-email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Subscribe to Newsletter</button>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Newsletter Subscription">
+            </form>
+        </section>
+
+        <!-- Join the Lab (Students) -->
+        <section>
+            <h2>🎓 Join the Lab (Students)</h2>
+            <p>Interested in joining d.Phi Lab as a graduate or undergraduate student? Tell us about yourself and your research interests.</p>
+            
+            <form class="contact-form" action="https://formspree.io/f/YOUR_STUDENT_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="student-name">Name *</label>
+                    <input type="text" id="student-name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="student-email">Email *</label>
+                    <input type="email" id="student-email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="student-level">Academic Level *</label>
+                    <select id="student-level" name="level" required>
+                        <option value="">Select your level</option>
+                        <option value="undergraduate">Undergraduate Student</option>
+                        <option value="masters">Master's Student</option>
+                        <option value="phd">PhD Student</option>
+                        <option value="prospective">Prospective Student</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-message">Tell us about your interests *</label>
+                    <textarea id="student-message" name="message" rows="8" required placeholder="Tell us about:
+- Your academic background
+- Research interests in experimental philosophy
+- What projects or topics interest you most
+- Your goals for joining the lab
+- When you'd like to start"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+
+                <p class="form-note">* Required fields. We'll review your application and respond within 2 weeks.</p>
+                
+                <input type="hidden" name="_subject" value="New Student Application">
+            </form>
+        </section>
+
+        <!-- Collaborate -->
+        <section>
+            <h2>🤝 Collaborate</h2>
+            <p>Looking to collaborate on research, co-author a paper, or explore joint projects? Let's connect!</p>
+            
+            <form class="contact-form" action="https://formspree.io/f/YOUR_COLLABORATION_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="collab-name">Name *</label>
+                    <input type="text" id="collab-name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="collab-email">Email *</label>
+                    <input type="email" id="collab-email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="collab-affiliation">Affiliation *</label>
+                    <input type="text" id="collab-affiliation" name="affiliation" required placeholder="University, Institution, or Organization">
+                </div>
+
+                <div class="form-group">
+                    <label for="collab-position">Position/Role</label>
+                    <input type="text" id="collab-position" name="position" placeholder="e.g., Assistant Professor, Postdoc, Independent Researcher">
+                </div>
+
+                <div class="form-group">
+                    <label for="collab-message">Collaboration Proposal *</label>
+                    <textarea id="collab-message" name="message" rows="8" required placeholder="Tell us about:
+- Your research background and interests
+- The type of collaboration you're proposing
+- Potential projects or research questions
+- Timeline and any relevant details"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Proposal</button>
+                </div>
+
+                <p class="form-note">* Required fields. We'll review your proposal and get back to you within 2 weeks.</p>
+                
+                <input type="hidden" name="_subject" value="New Collaboration Proposal">
+            </form>
+        </section>
+
+        <!-- General Contact Info -->
+        <section>
+            <h2>📍 General Information</h2>
             <div class="contact-grid">
                 <div class="contact-card">
                     <h3>Email</h3>
@@ -95,17 +206,18 @@
                 </div>
             </div>
         </section>
-
-        <section>
-            <h2>Join Our Team</h2>
-            <p>
-                We're always interested in hearing from motivated students and researchers who want to contribute to experimental philosophy. If you're interested in joining the lab as a graduate student, postdoc, or visiting researcher, please contact the lab director with your CV and research interests.
-            </p>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 d.Phi Lab - Experimental Philosophy @ UFMG. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logos">
+                <img src="CNPq_v2017_rgb.jpg" alt="CNPq Logo">
+                <img src="logo_ufmg_site.png" alt="UFMG Logo">
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 d.Phi Lab - Experimental Philosophy @ UFMG. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
