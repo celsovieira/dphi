@@ -413,6 +413,37 @@ section p {
     font-style: italic;
 }
 
+/* Contact Forms */
+.contact-form {
+    max-width: 700px;
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    border-left: 5px solid var(--teal);
+}
+
+.newsletter-form {
+    border-left-color: var(--pink);
+}
+
+.contact-form .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--white);
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-group select:focus {
+    outline: none;
+    border-color: var(--teal);
+}
+
 /* Footer */
 footer {
     background: var(--white);
